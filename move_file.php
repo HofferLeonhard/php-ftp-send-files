@@ -7,8 +7,8 @@
 	$ftp_username = "user"; // Nom d'utilisateur pour la connexion
 	$ftp_userpass = "user"; // Mot de passe pour la connexion
 
-	$old_file = "depart/serverfile.txt";  // Fichier à envoyé sur le serveur
-	$new_file = "arrivee/serverfile.txt"; // Nom du fichier sur le serveur à la réception
+	$old_file = "depart/serverfile.txt";  // Fichier à déplacer sur le serveur
+	$new_file = "arrivee/serverfile.txt"; // Fichier de destination
 
 
 	// Connexion et login
@@ -18,11 +18,11 @@
 	// try to move $old_file to $new_file
 	if(ftp_rename($ftp_conn, $old_file, $new_file))
 	{
-	  echo "Renamed $old_file to $new_file";
+	  echo "Move $old_file to $new_file";
 	}
 	else
 	{
-	  echo "Problem renaming $old_file to $new_file";
+	  echo "Problem moving $old_file to $new_file";
 	}
 
 	// close connection
