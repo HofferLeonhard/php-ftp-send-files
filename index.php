@@ -3,7 +3,7 @@
 
 	// Variables d'accès
 	$ftp_server = "localhost";  // Adresse du serveur
-	$ftp_server_port = "21";  // Adresse du serveur
+	$ftp_server_port = "21";  // Port de connexion (par défaut 21 pour le FTP)
 	$ftp_username = "user"; // Nom d'utilisateur pour la connexion
 	$ftp_userpass = "user"; // Mot de passe pour la connexion
 
